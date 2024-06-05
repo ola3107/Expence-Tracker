@@ -12,8 +12,9 @@
                     (negative - expense, positive - income)</label
                 >
                 <input type="text" id="amount" v-model="amount" placeholder="Enter amount..." />
+            </div><div class="btn">
+                <button class="add-btn">Add transaction</button>
             </div>
-            <button class="btn">Add transaction</button>
         </form>
     </div>
 </template>
@@ -77,7 +78,12 @@
         border: 1px solid #ccc;
     }
 
-    .btn {
+    .btn{
+        display: flex;
+        justify-content: center;
+    }
+
+    form .btn .add-btn {
         width: 70%;
         padding: 8px;
         border-radius: 5px;
@@ -85,7 +91,6 @@
         background-color: #333;
         color: white;
         cursor: pointer;
-        margin: 0 auto;
     }
 </style>
 
